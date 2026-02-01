@@ -9,61 +9,65 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&family=Shippori+Antique&display=swap" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
- 
-  <!--header-->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <div class="header-container">
       <a class="logo" href="#">Danny Nguyen</a>
+
       <nav class="nav-links">
         <a href="#about">About Me</a>
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
       </nav>
+
       <div class="social-icons">
-        <a href="https://github.com/dannywiing" target="_blank" title="GitHub">
-          <img src="Icon\github.png" alt="GitHub" />
+        <a href="https://github.com/dannywiing" target="_blank" title="GitHub" rel="noreferrer">
+          <img src="Icon/github.png" alt="GitHub" />
         </a>
-        <a href="https://www.linkedin.com/in/danny-nguyen-54b4b1305/" target="_blank" title="LinkedIn">
-          <img src="Icon\linkedin.png" alt="LinkedIn" />
+        <a href="https://www.linkedin.com/in/danny-nguyen-54b4b1305/" target="_blank" title="LinkedIn" rel="noreferrer">
+          <img src="Icon/linkedin.png" alt="LinkedIn" />
         </a>
-      </div> 
+      </div>
     </div>
   </header>
 
- <!--Animation -->
+  <!-- Typing animation -->
   <div class="typing-wrapper">
     <span class="typing">//Welcome to my portfolio</span>
   </div>
-  
- <!--About-->
+
+  <!-- About -->
   <section id="about" class="about-section">
     <div class="about-text">
       <h2>About me</h2>
       <p>
         I'm Danny Nguyen, a Computer Engineering student at Linnaeus University. I enjoy building user-friendly and visually engaging web apps, and I’m always experimenting with new technologies and ideas.
       </p>
-      <p>
-        Some tools & languages I’ve worked with:
-      </p>
+      <p>Some tools & languages I’ve worked with:</p>
+
       <ul class="tech-list">
         <li>HTML</li><li>CSS</li><li>JavaScript</li>
         <li>Java</li><li>Python</li>
       </ul>
     </div>
   </section>
-  
-  <!--header-->
+
+  <!-- Experience -->
   <section id="experience" class="experience-section">
     <h2>Experience</h2>
+
     <div class="experience-wrapper">
       <ul class="experience-tabs">
         <li data-tab="uni" class="active">University</li>
         <li data-tab="freelance">Freelance</li>
       </ul>
-   <!--Content-->
+
       <div class="experience-content">
         <div class="tab-content active" id="uni">
           <h3>Student @ Linnaeus University</h3>
@@ -74,29 +78,47 @@
         <div class="tab-content" id="freelance">
           <h3>Freelance Web Developer</h3>
           <p><strong>Ongoing</strong></p>
-          <p>Designed and built websites for small businesses using HTML, CSS, JavaScript</p>
+          <p>Designed and built websites for small businesses using HTML, CSS, JavaScript.</p>
         </div>
       </div>
     </div>
   </section>
 
-   <!--Projects-->
+  <!-- Projects -->
   <section id="projects" class="project-section">
     <div class="project-text">
       <h2>Projects</h2>
+
       <div class="project-list">
-        <div class="project-item">
-          <h3>0 Projects</h3>
-          <p></p>
-        </div>
+
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-thumb">
+            <img src="images/PWD.png" alt="Personal Web Desktop preview">
+          </div>
+
+          <div class="project-body">
+            <h3>Personal Web Desktop (PWD)</h3>
+            <p>Desktop-like SPA with draggable windows, a memory game, a WebSocket chat and a note.</p>
+
+            <ul class="project-tech">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+
+            <div class="project-links">
+              <a class="btn" href="https://github.com/dannywiing/Pwd-web-desktop" target="_blank" rel="noreferrer">GitHub</a>
+              <!-- <a class="btn outline" href="#" target="_blank" rel="noreferrer">Live Demo</a> -->
+            </div>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <!--Footer-->
   <footer>
     <p>© 2025 Danny Nguyen</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
